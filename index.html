@@ -5,6 +5,7 @@
     <title>Timer Wimer</title>
     <link rel="stylesheet" href="/styles/style.css">
 
+
 </head>
 <body>
     <h1>Timer Wimer</h1>
@@ -13,9 +14,12 @@
         and put how far out you want to have an email sent to you.
     </p>
 
+
+    <!--
     <div id="button-box">
         <button type="button">START</button>
     </div>
+    -->
 
     <div id="inputs">
         <div id="email-box">
@@ -36,13 +40,26 @@
         </div>
 
         <div id="time-box">
-            <label for="hour">Hours:</label>
-            <input type="number" id="hour" placeholder="Hour">
-            <label for="minutes">Minutes:</label>
-            <input type="number" id="minutes" placeholder="Minutes">
-            <label for="seconds">Seconds:</label>
-            <input type="number" id="seconds" placeholder="Seconds">
+            <div>
+                <label for="hour">Hours:</label>
+                <input type="number" id="hour" placeholder="Hour">
+            </div>
+            <div>
+                <label for="minutes">Minutes:</label>
+                <input type="number" id="minutes" placeholder="Minutes">
+            </div>
+            <div>
+                <label for="seconds">Seconds:</label>
+                <input type="number" id="seconds" placeholder="Seconds">
+            </div>
+
+        </div>
+
+        <div id="button-box">
+            <button class="totals" type="button" onclick="getUserTime()">Calculate Totals</button>
+            <button class="totals" type="button" onclick="getTotal()">Display Totals</button>
         </div>
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
